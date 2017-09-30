@@ -1,0 +1,12 @@
+body{
+    background-color: yellow;
+    color: yellow;
+}
+
+h1, .red_font{
+    color: red;
+}
+
+.red_font{
+    color: red;
+}
