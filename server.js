@@ -26,3 +26,10 @@ app.use('/', routes);
 
 
 app.listen(PORT);
+
+var reqTimer = setTimeout(function wakeUp() {
+    request("eat-da-burger-brooklee.herokuapp.com", function() {
+        console.log("WAKE UP DYNO");
+    });
+    return reqTimer = setTimeout(wakeUp, 1200000);
+}, 1200000);
