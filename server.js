@@ -7,6 +7,14 @@ var app = express();
 
 var PORT = process.env.PORT || 8081;
 
+
+// BodyParser makes it possible for our server to interpret data sent to it.
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+
+
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(process.cwd() + '/public'));
 
@@ -27,9 +35,4 @@ app.use('/', routes);
 
 app.listen(PORT);
 
-var reqTimer = setTimeout(function wakeUp() {
-    request("eat-da-burger-brooklee.herokuapp.com", function() {
-        console.log("WAKE UP DYNO");
-    });
-    return reqTimer = setTimeout(wakeUp, 1200000);
-}, 1200000);
+
