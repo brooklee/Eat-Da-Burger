@@ -10,11 +10,11 @@ var methodOverride = require('method-override');
 var router = express.Router();
 var burger = require('../models/burger.js');
 
-router.get('/', function (req, res) {
+router.get('/', function (res) {
 	res.redirect('/burgers');
 });
 
-router.get('/burgers', function (req, res) {
+router.get('/burgers', function (res) {
 	burger.all(function (data) {
 		var hbsObject = { burgers: data };
 		// console.log(hbsObject);
