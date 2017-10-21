@@ -28,4 +28,24 @@ app.use('/', routes);
 
 app.listen(PORT);
 
+var response;
+var statusCode;
+const fetchOptions = {
+    agent: new http.Agent({ keepAlive: true }),
+    timeout: 5000,
+};
+//
+// ...setup code for our request...
+
+    response = await fetch(url, fetchOptions).catch(catchError);
+statusCode = response.status;
+
+...other code looking for errors...
+
+// retry once for timeouts
+if (statusCode === 503) {
+    console.error('RETRY', url);
+    response = await fetch(url, fetchOptions).catch(catchError);
+    statusCode = response.status;
+}
 
