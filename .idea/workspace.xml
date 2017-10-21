@@ -20,8 +20,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="37" selection-end-column="35" />
+            <state relative-caret-position="477">
+              <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -223,12 +223,12 @@
       <updated>1506489296875</updated>
       <workItem from="1506489300811" duration="3868000" />
       <workItem from="1506634625762" duration="21641000" />
-      <workItem from="1506882342493" duration="11865000" />
+      <workItem from="1506882342493" duration="12359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37374000" />
+    <option name="totallyTimeSpent" value="37868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="491" y="23" width="1313" height="877" extended-state="0" />
@@ -266,7 +266,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -413,8 +413,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="37" selection-end-column="35" />
+        <state relative-caret-position="477">
+          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
           <folding />
         </state>
       </provider>
