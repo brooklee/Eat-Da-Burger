@@ -7,6 +7,9 @@ var app = express();
 
 var PORT = process.env.PORT || 8081;
 
+server.listen(PORT, function() {
+    console.log("App is running on port " + PORT);
+});
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(process.cwd() + '/public'));
@@ -25,7 +28,4 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/burgers_controllers.js');
 app.use('/', routes);
 
-
 app.listen(PORT);
-
-socket = io.listen(process.env.PORT);
