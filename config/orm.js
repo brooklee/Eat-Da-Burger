@@ -7,6 +7,8 @@
 
 var connection = require('./connection.js');
 
+
+
 function objToSql(ob) {
 	// column1=value, column2=value2,...
 	var arr = [];
